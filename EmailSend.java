@@ -48,7 +48,8 @@ public class EmailSend {
         String to = recipient;
 
         // Sender's email ID needs to be mentioned
-        String from = "inventorymanagementproject1@gmail.com";
+        //make sure to allow unsecure connections
+        String from = "YourEmail@email.com";
 
         // Assuming you are sending email from through gmails smtp
         String host = "smtp.gmail.com";
@@ -67,7 +68,7 @@ public class EmailSend {
 
             protected PasswordAuthentication getPasswordAuthentication() {
 
-                return new PasswordAuthentication("inventorymanagementproject1@gmail.com", "Testing1");
+                return new PasswordAuthentication("YourEmail@gmail.com", "YourPassword");
 
             }
 
